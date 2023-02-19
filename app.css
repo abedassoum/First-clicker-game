@@ -6,6 +6,9 @@
   align-items: center;
   position: relative;
 }
+body {
+  margin: auto;
+}
 
 #game {
   background-color: blue;
@@ -63,21 +66,57 @@
 
 #game_elements_helicopter {
   z-index: 1;
-  border-width: 2px;
-  border-color: black;
-  border-style: solid;
   position: absolute;
-  left: 70%;
+  left: 89%;
+  top: 15%;
 }
+
+
+#game_ui_health {
+  z-index: 1;
+  position: absolute;
+  right: 93%;
+}
+
+#game_ui_time {
+  z-index: 2;
+  position: absolute;
+  right: 47%;
+  top: 1%
+}
+
+#game_ui_score {
+  z-index: 2;
+  position: absolute;
+  right: 2%;
+  top: 1%
+}
+
+
+#game_ui_time img{
+  width:100px;
+  height:100px;
+  object-fit: contain;
+}
+
 
 #game_elements_human {
   z-index: 1;
-  border-width: 2px;
-  border-color: black;
-  border-style: solid;
   position: absolute;
-  left: 70%;
-  top: 25%;
+  left: 89%;
+  top: 30%;
+}
+
+#game_ui_score img {
+  width:130px;
+  height:100px;
+}
+
+
+#game_ui_health img {
+  width: 30px;
+  height: 50px;
+  object-fit: contain;
 }
 
 #game_elements_helicopter img,
